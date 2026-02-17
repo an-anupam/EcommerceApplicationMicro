@@ -1,0 +1,37 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://anup-userdb:abcd1234@user-data.riermui.mongodb.net/?appName=user-data
+      database: ecom_user
+
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
+app:
+  message: "hello-user"
+
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  register-with-eureka: true
+  fetch-registry: true
+
+#management:
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        includ: shutdown

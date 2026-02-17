@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        search-locations: file:///C:\Users\anumohan\Desktop\JavaSpringB\Prjc\EcommerceApplicationMicro\configserver\src\main\resources\config
+
+server:
+  port: 8888

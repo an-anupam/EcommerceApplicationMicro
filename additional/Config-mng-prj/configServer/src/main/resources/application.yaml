@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/an-anupam/app-configuration
+          username: ${GIT_USER}
+          password: ${GIT_TOKEN}   # All the values are stored inside env variable
+
+server:
+  port: 8888
